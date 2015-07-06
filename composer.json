@@ -1,5 +1,5 @@
 {
-    "name": "laravel/cashier",
+    "name": "kickdigital/cashier",
     "description": "",
     "keywords": ["laravel", "stripe", "billing"],
     "license": "MIT",
@@ -32,5 +32,11 @@
         "branch-alias": {
             "dev-master": "2.0-dev"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packages.kickdigital.co.uk"
+        }
+    ]
 }

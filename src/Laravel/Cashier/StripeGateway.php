@@ -54,6 +54,8 @@ class StripeGateway {
 	 */
 	protected $skipTrial = false;
 
+	protected $tax_percent = 20;
+
 	/**
 	 * Create a new Stripe gateway instance.
 	 *
@@ -116,6 +118,7 @@ class StripeGateway {
 		$payload = [
 			'plan' => $this->plan, 'prorate' => $this->prorate,
 			'quantity' => $this->quantity, 'trial_end' => $this->getTrialEndForUpdate(),
+			'tax_percent' => $this->tax_percent
 		];
 
 		return $payload;
